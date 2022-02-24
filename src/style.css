@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+nav {
+    background-color: #F55A5A;
+    padding: .5rem;
+}
+
+nav p {
+    width: 100%;
+    text-align: center;
+    color: white;
+}
