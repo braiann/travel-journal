@@ -10,6 +10,7 @@ body {
 nav {
     background-color: #F55A5A;
     padding: .5rem;
+    margin-bottom: 25px;
 }
 
 nav p {
@@ -18,4 +19,61 @@ nav p {
     color: white;
     font-weight: 500;
     letter-spacing: -0.075em;
+}
+
+section {
+    padding: 20px 40px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "pic location"
+        "pic title"
+        "pic dates"
+        "pic description";
+    place-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: #2B283A;
+}
+
+section img {
+    grid-area: pic;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+section p, section b {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+section .location {
+    grid-area: location;
+    align-self: end;
+    letter-spacing: 0.17em;
+}
+
+section .location a {
+    letter-spacing: normal;
+    color: #918E9B;
+}
+
+section h2 {
+    grid-area: title;
+    margin: 0;
+    padding: 0;
+}
+
+section b {
+    grid-area: dates;
+}
+
+section .description {
+    grid-area: description;
+    align-self: baseline;
+    font-size: 10px;
+    line-height: 150%;
 }
